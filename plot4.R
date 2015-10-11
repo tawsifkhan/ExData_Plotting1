@@ -23,7 +23,7 @@ lines(df1$DateTime,df1$Sub_metering_1,col="black")
 lines(df1$DateTime,df1$Sub_metering_2,col="red")
 lines(df1$DateTime,df1$Sub_metering_3,col="blue")
 legend("topright",c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
-       lty=1,col=c("black","red","blue"))
+       lty=1,col=c("black","red","blue"),cex=0.75,bty = "n")
 
 plot(df1$DateTime,df1$Global_reactive_power,type="l",
      xlab = "datetime",ylab = "Global Reactive Power")
